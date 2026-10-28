@@ -1,25 +1,46 @@
-# Personal Budget (Envelopes Budget Manager)
+# PERSONAL-BUDGET
 
-Simple backend API to manage a portfolio budget using an envelope budgeting method~   
-Users can create, read, update, and delete envelopes.
+A simple back-end API to manage a budget using the envelope budgeting method.
 
-## Running the app
-To run locally, run `npm install`, then `npm run start`
+## About The Project
 
-Once the app is running locally, you can access the API at `http://localhost:5000/`
+Users can create, read, update and delete envelopes, and transfer money between them. Built as the Personal Budget portfolio project of the Codecademy Back-End Engineer Career Path.
 
-## Caveats
-The app is currently using a javascript object to store the data.  
-This is not a good solution for a production app, but it is a good solution for a demo app. In a production app, you would want to use a database to store the data.  
-It also means that the data will be lost when the app is restarted.
+The app currently uses a JavaScript object to store the data: this is suitable for a demo, but not for a production app, which would use a database. The data is lost when the app restarts.
 
-## Testing with Swagger
-Swagger documentation and testing available at `http://localhost:5000/api-swagger`
+### API
 
-To test with Swagger:
- - Retrieve envelopes using `GET /api/v1/envelopes`
- - Find a single envelope using `GET /api/v1/envelopes/{id}`
- - Create an envelope using `POST /api/v1/envelopes`
- - Update an envelope using `PUT /api/v1/envelope/{id}`
- - Delete an envelope using `DELETE /api/v1/envelope/{id}`
- - Transfer money between envelopes using `POST /api/v1/envelope/{from}/transfer/{to}`
+- Retrieve envelopes: `GET /api/v1/envelopes`
+- Find a single envelope: `GET /api/v1/envelopes/{id}`
+- Create an envelope: `POST /api/v1/envelopes`
+- Update an envelope: `PUT /api/v1/envelope/{id}`
+- Delete an envelope: `DELETE /api/v1/envelope/{id}`
+- Transfer money between envelopes: `POST /api/v1/envelope/{from}/transfer/{to}`
+
+### Built With
+
+- Node.js + Express
+- Swagger (swagger-jsdoc, swagger-ui-express)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+
+### Installation
+
+```sh
+npm install
+npm start
+```
+
+Once running, the API is available at `http://localhost:5000/`, with Swagger documentation and testing at `http://localhost:5000/api-swagger`.
+
+## License
+
+No license file is present in this repository.
+
+## Contact
+
+Dyrits - https://github.com/Dyrits
